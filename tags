@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILEPATH	stocks.c	12;"	d	file:
+INDEXPATH	stocks.c	14;"	d	file:
+STOCKS_H	stocks.c	7;"	d	file:
+_fileNameNode	getFileName.h	/^} _fileNameNode;$/;"	t	typeref:struct:node
+blocks	stocks.c	/^}blocks;$/;"	t	typeref:struct:__anon1	file:
+create_index	stocks.c	/^void create_index(){$/;"	f
+deal	stocks.c	/^typedef struct deal{$/;"	s	file:
+deal	stocks.c	/^}deal;$/;"	t	typeref:struct:deal	file:
+fileName	getFileName.h	/^  char fileName[256];$/;"	m	struct:node
+freeBlocks	stocks.c	/^void freeBlocks(blocks *block){$/;"	f
+freefileNameList	getFileName.h	/^void freefileNameList(_fileNameNode *head){$/;"	f
+getDate	stocks.c	/^void getDate(char *buf,short * year,short *month,short *day){$/;"	f
+getFileNameByDir	getFileName.h	/^_fileNameNode * getFileNameByDir(const char*dir){$/;"	f
+getFileName_h	getFileName.h	2;"	d
+getInfo	stocks.c	/^void getInfo(int blockCode,blocks * block,short fromYear,short toYear,short fromMonth,short toMonth,$/;"	f
+m_adj_close	stocks.c	/^  float m_volume;float m_adj_close;$/;"	m	struct:deal	file:
+m_close	stocks.c	/^  float m_open;float m_high;float m_low;float m_close;$/;"	m	struct:deal	file:
+m_count	stocks.c	/^  int m_count;$/;"	m	struct:__anon1	file:
+m_day	stocks.c	/^  short m_year;char m_month;char m_day;$/;"	m	struct:deal	file:
+m_high	stocks.c	/^  float m_open;float m_high;float m_low;float m_close;$/;"	m	struct:deal	file:
+m_low	stocks.c	/^  float m_open;float m_high;float m_low;float m_close;$/;"	m	struct:deal	file:
+m_month	stocks.c	/^  short m_year;char m_month;char m_day;$/;"	m	struct:deal	file:
+m_next	stocks.c	/^  struct deal* m_next;$/;"	m	struct:deal	typeref:struct:deal::deal	file:
+m_open	stocks.c	/^  float m_open;float m_high;float m_low;float m_close;$/;"	m	struct:deal	file:
+m_pData	stocks.c	/^  deal* m_pData;$/;"	m	struct:__anon1	file:
+m_volume	stocks.c	/^  float m_volume;float m_adj_close;$/;"	m	struct:deal	file:
+m_year	stocks.c	/^  short m_year;char m_month;char m_day;$/;"	m	struct:deal	file:
+main	stocks.c	/^int main(){$/;"	f
+next	getFileName.h	/^  struct node * next;$/;"	m	struct:node	typeref:struct:node::node
+node	getFileName.h	/^typedef struct node{$/;"	s
+process_index	stocks.c	/^void process_index(const char * fileName){$/;"	f

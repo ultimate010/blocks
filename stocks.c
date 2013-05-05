@@ -1,7 +1,8 @@
 /*
  *  根据股票代码，获取股票交易的详情
- *  王星友
+ *  Zaks Wang
  *  2013-4-3
+ *
  */
 #ifndef STOCKS_H
 #define STOCKS_H
@@ -82,7 +83,9 @@ void getInfo(int blockCode,blocks * block,short fromYear,short toYear,short from
   long pos=0,toPos=0;
   short year=0;
   while(!feof(readFp)){
-    fscanf(readFp,"%d%d",&year,&pos); //两次读取最后一行数据，对结果没有影响
+    if(fscanf(readFp,"%d%d",&year,&pos)==EOF){
+      break;
+    }
     if(toYear>=year&&toPos==0){
       toPos=pos;
       break;
@@ -104,10 +107,7 @@ void getInfo(int blockCode,blocks * block,short fromYear,short toYear,short from
   long fromTime=fromYear*10000+fromMonth*100+fromDay;
   long toTime = toYear*10000 + toMonth*100+toDay;
   long tempTime;
-  while(!feof(readFp)){
-    if(fgets(lineBuf,512,readFp)==NULL){
-      break;
-    }//读一行
+  while(fgets(lineBuf,512,readFp)!=NULL){
     getDate(lineBuf,&year,&month,&day);
     tempTime=year*10000+month*100+day;
     if(toTime>=tempTime){
